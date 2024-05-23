@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fs-branding: 2rem;
+  --fw-branding: 700;
+
+  --fs-smaller: 0.8rem;
+  --fs-small: 1rem;
+  --fs-medium: 1.1rem;
+  --fs-large: 1.2rem;
+  --fs-f: 10vh;
+  --fs-rem: 1.5rem;
+  --fw-rem: 700;
+  --fw-medium: 600;
+
+  --fc-black: rgba(0, 0, 0, 0.9);
+
+  --fc-gray: rgb(102, 102, 102);
+  --fc-footer: rgba(34, 40, 50, 0.7);
+
+  /* --fc-softblack: rgba(0, 0, 0, 0.9);
+  --fc-darkgray: rgba(34, 40, 50, 1);
+  --fc-grey: rgba(119, 123, 133, 1);
+  --lc-grey: rgba(119, 123, 133, 0.6);
+  --shadow: rgba(119, 123, 133, 0.3); */
+
+  --colorbg: rgb(241, 241, 241);
+  --colormain: rgb(255, 252, 252);
+}
+
+body {
+  background-color: var(--colorbg);
+  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/*=================================================
+      UTILITIES
+==================================================*/
+
+.line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--fc-black);
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.alight-center {
+  align-items: center;
+}
+
+.align-left {
+  align-items: left;
+}
+
+.j-self-center {
+  justify-content: center;
+}
+
+.margin-l-r {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pad {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*=================================================
+      HEADER
+==================================================*/
+header {
+  width: 1400px;
+  background-color: var(--colormain);
+}
+
+header > ul {
+  list-style: none;
+}
+
+.branding {
+  color: var(--fc-black);
+  font-size: var(--fs-branding);
+  font-weight: var(--fw-branding);
+}
+
+.nav-bar {
+  background-color: var(--fc-black);
+  height: 3rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: aliceblue;
+}
+/*=================================================
+      MAIN
+==================================================*/
+
+main {
+  width: 1400px;
+  background-color: var(--colormain);
+}
+
+main li {
+  margin-left: 20px;
+}
+
+main > ul a {
+  text-decoration: none;
+}
+
+/*=================================================
+      FOOTER
+==================================================*/
+
+footer {
+  width: 1400px;
+}
